@@ -1,0 +1,48 @@
+Last login: Thu Jan 18 22:04:27 on ttys031
+(base) jordanromnes@Steves-MacBook-Pro ~ % cd Downloads
+(base) jordanromnes@Steves-MacBook-Pro Downloads % cd Project_1
+(base) jordanromnes@Steves-MacBook-Pro Project_1 % touch .git_ignore
+(base) jordanromnes@Steves-MacBook-Pro Project_1 % touch .gitignore
+(base) jordanromnes@Steves-MacBook-Pro Project_1 % keys.env/gitignore
+zsh: not a directory: keys.env/gitignore
+(base) jordanromnes@Steves-MacBook-Pro Project_1 % keys.env/.gitignore
+zsh: not a directory: keys.env/.gitignore
+(base) jordanromnes@Steves-MacBook-Pro Project_1 % touch .gitignore
+(base) jordanromnes@Steves-MacBook-Pro Project_1 % keys.env/
+zsh: not a directory: keys.env/
+(base) jordanromnes@Steves-MacBook-Pro Project_1 % cd .gitignore
+cd: not a directory: .gitignore
+(base) jordanromnes@Steves-MacBook-Pro Project_1 % touch .gitignore
+(base) jordanromnes@Steves-MacBook-Pro Project_1 % ls
+MCForecastTools.py		data_collection.py
+README.md			data_extraction&cleaning.ipynb
+Untitled.ipynb			keys.env
+__pycache__			trial_notebook.ipynb
+(base) jordanromnes@Steves-MacBook-Pro Project_1 % nano .gitignore
+
+
+
+  UW PICO 5.09                    File: .gitignore                    Modified  
+
+keys.env/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Pg   ^K Cut Text  ^C Cur Pos   
+^X Exit      ^J Justify   ^W Where is  ^V Next Pg   ^U UnCut Text^T To Spell  
