@@ -7,7 +7,7 @@ import datetime as dt
 import pytz
 class MCSimulation:
    
-    def _init_(self, portfolio_data, weights="", num_simulation=1000, num_trading_days=252):
+    def __init__(self, portfolio_data, weights="", num_simulation=1000, num_trading_days=252):
        
         # Check to make sure that all attributes are set
         if not isinstance(portfolio_data, pd.DataFrame):
@@ -95,25 +95,3 @@ class MCSimulation:
         ci_series.index = ["95% CI Lower","95% CI Upper"]
         summary_stats = pd.concat([metrics, ci_series])
         return summary_stats
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Shift + Enter to add a new line
