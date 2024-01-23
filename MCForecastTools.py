@@ -5,6 +5,9 @@ import os
 import alpaca_trade_api as tradeapi
 import datetime as dt
 import pytz
+import plotly.graph_objects as go
+import plotly.express as px
+
 class MCSimulation:
    
     def __init__(self, portfolio_data, weights="", num_simulation=1000, num_trading_days=252):
@@ -44,8 +47,6 @@ class MCSimulation:
         portfolio_cumulative_returns = pd.DataFrame()
         # Run the simulation of projecting stock prices 'nSim' number of times
         for n in range(self.nSim):
-            if n % 10 == 0:
-                print(f"Running Monte Carlo simulation number {n}.")
             # Create a list of lists to contain the simulated values for each stock
             simvals = [[p] for p in last_prices]
             # For each stock in our data:
@@ -73,6 +74,7 @@ class MCSimulation:
         # Use Pandas plot function to plot the return data
         plot_title = f"{self.nSim} Simulations of Cumulative Portfolio Return Trajectories Over the Next {self.nTrading} Trading Days."
         return self.simulated_return.plot(legend=None,title=plot_title)
+
     def plot_distribution(self):
         
         # Check to make sure that simulation has run previously.
@@ -85,6 +87,9 @@ class MCSimulation:
         plt.axvline(self.confidence_interval.iloc[0], color='r')
         plt.axvline(self.confidence_interval.iloc[1], color='r')
         return plt
+
+
+
     def summarize_cumulative_return(self):
        
         # Check to make sure that simulation has run previously.
@@ -95,3 +100,4 @@ class MCSimulation:
         ci_series.index = ["95% CI Lower","95% CI Upper"]
         summary_stats = pd.concat([metrics, ci_series])
         return summary_stats
+
