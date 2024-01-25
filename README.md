@@ -2,9 +2,9 @@
 ## Project Overview
 This project strives to explain the potential returns for a prospective investor. The project does this by utilizing simulation data based on historical price data provided in the Pandas dataframe.
 
-Important note: Due to a majority of visualizations being created with Plotly, visualizations may not show in the Github preview of the main_notebook.ipnyb and the visualizations_notebook. Please clone and run notebooks in Jupyter Lab to see visualizations. 
+_Important note: Due to a majority of visualizations being created with Plotly, visualizations may not show in the Github preview of the main_notebook.ipnyb and the visualizations_notebook. Please clone and run notebooks in Jupyter Lab to see visualizations._
 ## Project Description
-    Embark on an exploration of data analysis, seamlessly integrating the use of data visualization, extraction, historical analysis, risk assessment, and adeptly navigating the nuanced landscape of a Monte Carlo simulation. This project entails a thorough examination of portfolios, each endowed with a $20,000 investment spanning a 3 year temporal horizon, as well as securing a heavily weighted stock that we have chosen to represent its respective sector. The ensuing qualitative analysis and comparative analysis yield profound insights into the dynamics of an investment performance.
+Embark on an exploration of data analysis, seamlessly integrating the use of data visualization, extraction, historical analysis, risk assessment, and adeptly navigating the nuanced landscape of a Monte Carlo simulation. This project entails a thorough examination of portfolios, each endowed with a $20,000 investment spanning a 3 year temporal horizon, as well as securing a heavily weighted stock that we have chosen to represent its respective sector. The ensuing qualitative analysis and comparative analysis yield profound insights into the dynamics of an investment performance.
 ## Important Files
 • main_notebook.pynb - contains all data analysis (inclusing visualizations)
 
